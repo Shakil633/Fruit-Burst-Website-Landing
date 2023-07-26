@@ -35,9 +35,7 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
-              "bike-primary": "#E76F51",
-              "bike-primary-bg": "rgba(231, 111, 81, 0.10)",
+              "fruit-primary": "#F85559",
             },
           },
         },
@@ -48,7 +46,7 @@
     <header class="md:max-w-5xl md:mx-auto">
       <nav>
         <div
-          class="navbar justify-between lg:flex-row flex-row-reverse lg:bg-[#F85559] bg-none rounded-full"
+          class="navbar justify-between lg:flex-row flex-row-reverse lg:bg-fruit-primary bg-none rounded-full"
         >
           <div class="">
             <div class="dropdown dropdown-end">
@@ -70,7 +68,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] lg:p-2  shadow lg:bg-base-100  rounded-box w-52 pr-10"
+                class="menu menu-sm dropdown-content mt-3 z-[1] lg:p-2 shadow lg:bg-base-100 rounded-box w-52 pr-10"
               >
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
@@ -81,7 +79,9 @@
           </div>
 
           <div class="navbar-start hidden lg:flex">
-            <ul class="menu menu-horizontal text-white px-1 text-base font-medium">
+            <ul
+              class="menu menu-horizontal text-white px-1 text-base font-medium"
+            >
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
@@ -89,8 +89,9 @@
             </ul>
           </div>
           <div class="lg:bg-center bg-right gap-2">
-            <img class="w-8 " src="images/logo.png" alt="" />
-            <a class="normal-case text-xl lg:text-white text-black w-32 lg:mr-7 mr-52"
+            <img class="w-8" src="images/logo.png" alt="" />
+            <a
+              class="normal-case text-xl lg:text-white text-black w-32 lg:mr-7 mr-52"
               >Fruit Burst</a
             >
           </div>
@@ -108,8 +109,159 @@
           </div>
         </div>
       </nav>
+      <!-- slider or carousel -->
 
-      
+      <!-- <div class="carousel w-full mt-12">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/banner1.png" class="w-full" />
+
+          <div
+            class="text-[#fff] absolute w-[1024px] mx-auto pt-12 text-center"
+          >
+            <h1 class="text-5xl font-extrabold">
+              Exotic tastes at your <br />
+              doorstep
+            </h1>
+            <p class="text-lg font-medium mt-4">
+              We supply highly quality organic products
+            </p>
+            <button
+              class="py-3 px-5 text-white bg-fruit-primary mt-6 rounded-md"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div
+            class="hero lg:mt-10 mt-3 rounded-xl"
+            style="
+              background-image: url('images/banner1.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+            <div class="text-center text-neutral-content">
+              <div class="py-24">
+                <h1
+                  class="mb-5 text-2xl lg:text-5xl font-extrabold text-[#FFF] font"
+                >
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p
+                  class="px-3 lg:max-w-[550px] w-[300px] mx-auto text-[#E7E7E7]"
+                >
+                  We supply highly quality organic products
+                </p>
+                <div>
+                  <button
+                    class="py-3 px-5 text-white bg-fruit-primary mt-6 rounded-md"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <div id="slide2" class="carousel-item relative w-full">
+          <div
+            class="hero lg:mt-10 mt-3 rounded-xl"
+            style="
+              background-image: url('images/banner1.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+            <div class="text-center text-neutral-content">
+              <div class="py-24">
+                <h1
+                  class="mb-5 text-2xl lg:text-5xl font-extrabold text-[#FFF] font"
+                >
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p
+                  class="px-3 lg:max-w-[550px] w-[300px] mx-auto text-[#E7E7E7]"
+                >
+                  We supply highly quality organic products
+                </p>
+                <div>
+                  <button
+                    class="py-3 px-5 text-white bg-fruit-primary mt-6 rounded-md"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
